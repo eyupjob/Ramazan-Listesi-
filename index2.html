@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramazan Özel</title>
+    <style>
+    
+    td{
+      border: 1px solid;
+      padding: 3px;
+      margin: 0px;
+    }
+    .b1{
+      background-color: rgb(228, 225, 225);
+    }
+    .kadir{
+      background-color: lightgreen;
+    }
+   #ortala{
+    width: 50%;
+    margin: 0 auto;
+   }
+   h1{
+    margin: 0 auto;
+   }
+   a:link{
+            background-color: aquamarine;
+            border: solid 2px rgb(62, 212, 48);
+            padding: 10px 20px;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 0 auto;
+   }
+   .button{
+    width: 50%;
+    margin: 0 auto;
+   }
+    </style>
+</head>
+<body>
+<div class="button">
+        <nav>
+            
+                <a href="index.html">Anasayfa</a> 
+                <a href="hatim.html">Hatim</a>
+                <a href="deneme2.html">deneme2</a> 
+        </nav>
+ </div>
+<div id="ortala">
+    <h1>Ramazan Özel</h1>
+  <table id="tablo">
+    <tr>
+      <th>No</th>
+      <th>Tarih</th>
+      <th>Ad Soyad</th>
+      <th>Ad Soyad Giriniz.</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Mart 23 Perşembe</td>
+      <td id="a1"></td>
+      <td>
+        <form>
+          <label for="ad">Ad:</label>
+          <input type="text" id="ad" name="ad">
+          <button type="button" onclick="kaydet()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>2</td>
+      <td>Mart 24 Cuma</td>
+      <td id="a21"></td>
+      <td>
+        <form>
+          <label for="a2">Ad:</label>
+          <input type="text" id="a2" name="a2">
+          <button type="button" onclick="a22()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mart 25 Cumartesi</td>
+      <td id="a31"></td>
+      <td>
+        <form>
+          <label for="a3">Ad:</label>
+          <input type="text" id="a3" name="a3">
+          <button type="button" onclick="a32()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>4</td>
+      <td>Mart 26 Pazar</td>
+      <td id="a41"></td>
+      <td>
+        <form>
+          <label for="a4">Ad:</label>
+          <input type="text" id="a4" name="a4">
+          <button type="button" onclick="a42()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Mart 27 Pazartesi</td>
+      <td id="a51"></td>
+      <td>
+        <form>
+          <label for="a5">Ad:</label>
+          <input type="text" id="a5" name="a5">
+          <button type="button" onclick="a52()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>6</td>
+      <td>Mart 28 Salı</td>
+      <td id="a61"></td>
+      <td>
+        <form>
+          <label for="a6">Ad:</label>
+          <input type="text" id="a6" name="a6">
+          <button type="button" onclick="a62()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Mart 29 Çarşamba</td>
+      <td id="a71"></td>
+      <td>
+        <form>
+          <label for="a7">Ad:</label>
+          <input type="text" id="a7" name="a7">
+          <button type="button" onclick="a72()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>8</td>
+      <td>Mart 30 Perşembe</td>
+      <td id="a81"></td>
+      <td>
+        <form>
+          <label for="a8">Ad:</label>
+          <input type="text" id="a8" name="a8">
+          <button type="button" onclick="a82()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Mart 31 Cuma</td>
+      <td id="a91"></td>
+      <td>
+        <form>
+          <label for="a9">Ad:</label>
+          <input type="text" id="a9" name="a9">
+          <button type="button" onclick="a92()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>10</td>
+      <td>Nisan 01 Cumartesi</td>
+      <td id="a101"></td>
+      <td>
+        <form>
+          <label for="a10">Ad:</label>
+          <input type="text" id="a10" name="a10">
+          <button type="button" onclick="a102()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Nisan 02 Pazar</td>
+      <td id="a111"></td>
+      <td>
+        <form>
+          <label for="a11">Ad:</label>
+          <input type="text" id="a11" name="a11">
+          <button type="button" onclick="a112()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>12</td>
+      <td>Nisan 03 Pazartesi</td>
+      <td id="a121"></td>
+      <td>
+        <form>
+          <label for="a12">Ad:</label>
+          <input type="text" id="a12" name="a12">
+          <button type="button" onclick="a122()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Nisan 04 Salı</td>
+      <td id="a131"></td>
+      <td>
+        <form>
+          <label for="a13">Ad:</label>
+          <input type="text" id="a13" name="a13">
+          <button type="button" onclick="a132()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>14</td>
+      <td>Nisan 05 Çarşamba</td>
+      <td id="a141"></td>
+      <td>
+        <form>
+          <label for="a14">Ad:</label>
+          <input type="text" id="a14" name="a14">
+          <button type="button" onclick="a142()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Nisan 06 Perşembe</td>
+      <td id="a151"></td>
+      <td>
+        <form>
+          <label for="a15">Ad:</label>
+          <input type="text" id="a15" name="a15">
+          <button type="button" onclick="a152()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>16</td>
+      <td>Nisan 07 Cuma</td>
+      <td id="a161"></td>
+      <td>
+        <form>
+          <label for="a16">Ad:</label>
+          <input type="text" id="a16" name="a16">
+          <button type="button" onclick="a162()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Nisan 08 Cumartesi</td>
+      <td id="a171"></td>
+      <td>
+        <form>
+          <label for="a17">Ad:</label>
+          <input type="text" id="a17" name="a17">
+          <button type="button" onclick="a172()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>18</td>
+      <td>Nisan 09 Pazar</td>
+      <td id="a181"></td>
+      <td>
+        <form>
+          <label for="a18">Ad:</label>
+          <input type="text" id="a18" name="a18">
+          <button type="button" onclick="a182()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Nisan 10 Pazartesi</td>
+      <td id="a191"></td>
+      <td>
+        <form>
+          <label for="a19">Ad:</label>
+          <input type="text" id="a19" name="a19">
+          <button type="button" onclick="a192()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>20</td>
+      <td>Nisan 11 Salı</td>
+      <td id="a201"></td>
+      <td>
+        <form>
+          <label for="a20">Ad:</label>
+          <input type="text" id="a20" name="a20">
+          <button type="button" onclick="a202()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Nisan 12 Çarşamba</td>
+      <td id="a281"></td>
+      <td>
+        <form>
+          <label for="a28">Ad:</label>
+          <input type="text" id="a28" name="a28">
+          <button type="button" onclick="a282()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>22</td>
+      <td>Nisan 13 Perşembe</td>
+      <td id="a221"></td>
+      <td>
+        <form>
+          <label for="a22">Ad:</label>
+          <input type="text" id="a22" name="a22">
+          <button type="button" onclick="a222()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Nisan 14 Cuma</td>
+      <td id="a231"></td>
+      <td>
+        <form>
+          <label for="a23">Ad:</label>
+          <input type="text" id="a23" name="a23">
+          <button type="button" onclick="a232()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr class="b1">
+      <td>24</td>
+      <td>Nisan 15 Cumartesi</td>
+      <td id="a241"></td>
+      <td>
+        <form>
+          <label for="a24">Ad:</label>
+          <input type="text" id="a24" name="a24">
+          <button type="button" onclick="a242()">Kaydet</button>
+        </form>
+
+      </td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Nisan 16 Pazar</td>
+      <td id="a251"></td>
+      <td>
+        <form>
+          <label for="a25">Ad:</label>
+          <input type="text" id="a25" name="a25">
+          <button type="button" onclick="a252()">Kaydet</button>
+        </form>
+
+      </td>
+      <tr class="kadir">
+        <td>26</td>
+        <td>Nisan 17 Pazartesi</td>
+        <td id="a261">Kadir Gecesi</td>
+        <td>
+          <form>
+            <label for="a26">Ad:</label>
+            <input type="text" id="a26" name="a26">
+            <button type="button" onclick="a262()">Kaydet</button>
+          </form>
+  
+        </td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>Nisan 18 Salı</td>
+        <td id="a271"></td>
+        <td>
+          <form>
+            <label for="a27">Ad:</label>
+            <input type="text" id="a27" name="a27">
+            <button type="button" onclick="a272()">Kaydet</button>
+          </form>
+  
+        </td>
+      </tr>
+      <tr class="b1">
+        <td>28</td>
+        <td>Nisan 19 Çarşamba</td>
+        <td id="a291"></td>
+        <td>
+          <form>
+            <label for="a29"></label>
+            <input type="text" id="a29" name="a27">
+            <button type="button" onclick="a292()">Kaydet</button>
+          </form>
+  
+        </td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>Nisan 20 Perşembe</td>
+        <td>Arefe Günü</td>
+          
+  
+        
+    </tr>
+    </tr>
+  </table>
+</div>
+<div id="ortala">
+  Ramazan ilk iftara <span id="geri-sayim"></span>kaldı.
+</div>
+    <script>
+    function kaydet() {
+      var ad = document.getElementById("ad").value;
+      document.getElementById("a1").innerHTML = ad;
+      document.getElementById("ad").value = "";
+    }
+    function a22() {
+      var ad = document.getElementById("a2").value;
+      document.getElementById("a21").innerHTML = ad;
+      document.getElementById("a2").value = "";
+    }
+    function a32() {
+      var ad = document.getElementById("a3").value;
+      document.getElementById("a31").innerHTML = ad;
+      document.getElementById("a3").value = "";
+    }
+    function a42() {
+      var ad = document.getElementById("a4").value;
+      document.getElementById("a41").innerHTML = ad;
+      document.getElementById("a4").value = "";
+    }
+    function a52() {
+      var ad = document.getElementById("a5").value;
+      document.getElementById("a51").innerHTML = ad;
+      document.getElementById("a5").value = "";
+    }
+    function a62() {
+      var ad = document.getElementById("a6").value;
+      document.getElementById("a61").innerHTML = ad;
+      document.getElementById("a6").value = "";
+    }
+    function a72() {
+      var ad = document.getElementById("a7").value;
+      document.getElementById("a71").innerHTML = ad;
+      document.getElementById("a7").value = "";
+    }
+    function a82() {
+      var ad = document.getElementById("a8").value;
+      document.getElementById("a81").innerHTML = ad;
+      document.getElementById("a8").value = "";
+    }
+    function a92() {
+      var ad = document.getElementById("a9").value;
+      document.getElementById("a91").innerHTML = ad;
+      document.getElementById("a9").value = "";
+    }
+    function a102() {
+      var ad = document.getElementById("a10").value;
+      document.getElementById("a101").innerHTML = ad;
+      document.getElementById("a10").value = "";
+    }
+    function a112() {
+      var ad = document.getElementById("a11").value;
+      document.getElementById("a111").innerHTML = ad;
+      document.getElementById("a11").value = "";
+    }
+    function a122() {
+      var ad = document.getElementById("a12").value;
+      document.getElementById("a121").innerHTML = ad;
+      document.getElementById("a12").value = "";
+    }
+    function a132() {
+      var ad = document.getElementById("a13").value;
+      document.getElementById("a131").innerHTML = ad;
+      document.getElementById("a13").value = "";
+    }
+    function a142() {
+      var ad = document.getElementById("a14").value;
+      document.getElementById("a141").innerHTML = ad;
+      document.getElementById("a14").value = "";
+    }
+    function a152() {
+      var ad = document.getElementById("a15").value;
+      document.getElementById("a151").innerHTML = ad;
+      document.getElementById("a15").value = "";
+    }
+    function a162() {
+      var ad = document.getElementById("a16").value;
+      document.getElementById("a161").innerHTML = ad;
+      document.getElementById("a16").value = "";
+    }
+    function a172() {
+      var ad = document.getElementById("a17").value;
+      document.getElementById("a171").innerHTML = ad;
+      document.getElementById("a17").value = "";
+    }
+    function a182() {
+      var ad = document.getElementById("a18").value;
+      document.getElementById("a181").innerHTML = ad;
+      document.getElementById("a18").value = "";
+    }
+    function a192() {
+      var ad = document.getElementById("a19").value;
+      document.getElementById("a191").innerHTML = ad;
+      document.getElementById("a19").value = "";
+    }
+    function a202() {
+      var ad = document.getElementById("a20").value;
+      document.getElementById("a201").innerHTML = ad;
+      document.getElementById("a20").value = "";
+    }
+    function a282() {
+      var ad = document.getElementById("a28").value;
+      document.getElementById("a281").innerHTML = ad;
+      document.getElementById("a28").value = "";
+    }
+    function a222() {
+      var ad = document.getElementById("a22").value;
+      document.getElementById("a221").innerHTML = ad;
+      document.getElementById("a22").value = "";
+    }
+    function a232() {
+      var ad = document.getElementById("a23").value;
+      document.getElementById("a231").innerHTML = ad;
+      document.getElementById("a23").value = "";
+    }
+    function a242() {
+      var ad = document.getElementById("a24").value;
+      document.getElementById("a241").innerHTML = ad;
+      document.getElementById("a24").value = "";
+    }
+    function a252() {
+      var ad = document.getElementById("a25").value;
+      document.getElementById("a251").innerHTML = ad;
+      document.getElementById("a25").value = "";
+    }
+    function a262() {
+      var ad = document.getElementById("a26").value;
+      document.getElementById("a261").innerHTML = ad;
+      document.getElementById("a26").value = "Kadir Gecesi";
+    }
+    function a272() {
+      var ad = document.getElementById("a27").value;
+      document.getElementById("a271").innerHTML = ad;
+      document.getElementById("a27").value = "";
+    }
+    function a292() {
+      var ad = document.getElementById("a29").value;
+      document.getElementById("a291").innerHTML = ad;
+      document.getElementById("a29").value = "";
+    }
+    </script>
+    
+    <script>
+      // Geri sayımın tamamlanacağı tarihi belirleyin (yıl, ay, gün, saat, dakika, saniye)
+      var hedefTarih = new Date("March 23, 2023 19:06:00").getTime();
+    
+      // Geri sayımı güncellemek için bir zamanlayıcı tanımlayın
+      var zamanlayici = setInterval
+      (function() {
+    
+        // Şimdiki tarih ve zamanı alın
+        var simdikiTarih = new Date().getTime();
+    
+        // Tarihe kalan süreyi hesaplayın
+        var kalanSure = hedefTarih - simdikiTarih;
+    
+        // Gün, saat, dakika ve saniye cinsinden süreyi hesaplayın
+        var gun = Math.floor(kalanSure / (1000 * 60 * 60 * 24));
+        var saat = Math.floor((kalanSure % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var dakika = Math.floor((kalanSure % (1000 * 60 * 60)) / (1000 * 60));
+        var saniye = Math.floor((kalanSure % (1000 * 60)) / 1000);
+    
+        // Geri sayımı HTML içinde gösterin
+        document.getElementById("geri-sayim").innerHTML = gun + " gün " + saat + " saat "
+        + dakika + " dakika " + saniye + " saniye ";
+    
+        // Tarih geçtiyse geri sayımı durdurun
+        if (kalanSure < 0) {
+          clearInterval(zamanlayici);
+          document.getElementById("geri-sayim").innerHTML = "Geri sayım tamamlandı!";
+        }
+      }, 1000);
+    </script>
+    
+</body>
+</html>
